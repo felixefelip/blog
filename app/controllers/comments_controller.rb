@@ -9,8 +9,8 @@ class CommentsController < ApplicationController
 
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to posts_url, notice: "Comment was successfully created." }
-        format.json { render :index, status: :created, location: @post }
+        format.html { redirect_to post_url(@comment.post_id), notice: "Comment was successfully created." }
+        format.json { render :show, status: :created, location: @post }
       else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @comment.errors, status: :unprocessable_entity }
