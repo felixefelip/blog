@@ -50,4 +50,4 @@ test:
 #
 production:
   <<: *default
-  database: blog_production
+  database: heroku_f1543c589b79fa0
