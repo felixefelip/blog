@@ -14,7 +14,9 @@
     <h2 class="my-3" style="font-size: 20px">Deixe um comentário</h2>
     <%= form.text_area :body, class:"form-control mb-3", placeholder:"Comentário *" %>
     <%= form.number_field :post_id, post_id: :post_id, value:@post.id, type: :hidden %>
-    <%= form.number_field :user_id, user_id: :user_id, value:current_user.id, type: :hidden %>
+    <% if user_signed_in? %>
+      <%= form.number_field :user_id, user_id: :user_id, value:current_user.id, type: :hidden %>
+    <% end %>
     <%= form.submit "Publicar Comentário", class:"btn btn-primary" %>
   <% end %>
 </section>

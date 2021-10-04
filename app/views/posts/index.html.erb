@@ -13,17 +13,19 @@
         <span><%= post.created_at %></span>
       </p>
 
+      <% if post.user == current_user %>
       <div style="display: flex; justify-content: right;">
         <%= link_to 'Editar', edit_post_path(post) %> <pre>  </pre> 
         <%= link_to 'Remover', post, method: :delete, data: { confirm: 'Are you sure?' } %>
       </div>
-
+      <% end %>
+      
 			<h4 class="card-title" style="font-weight: bold; color: black; padding-top: 5px;">
 				<span ><%= link_to post.title, post, style:"font-weight: bold; color: black" %></span>
 			</h4>
 
 			<p class="card-text">
-				<span><%= post.content %></span>
+        <%= truncate_html post.content, :length => 500 %>
 			</p>
     </div>
   </div>
