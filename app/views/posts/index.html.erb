@@ -1,8 +1,4 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Posts</h1>
-
-
 
 <% @posts.each do |post| %>
   <div class="card shadow-sm bg-white rounded" style="margin-top: 20px;">
@@ -10,7 +6,7 @@
 
       <p class="card-subtitle text-muted" style="font-size: 0.8rem;">
         <%= post.user.first_name %> <%= post.user.last_name %>
-        <span><%= post.created_at %></span>
+        <span><%= post.created_at.strftime("%d/%m/%Y, %H:%M")  %></span>
       </p>
 
       <% if post.user == current_user %>
@@ -36,4 +32,3 @@
 
 <br>
 
-<%= link_to 'New Post', new_post_path %>

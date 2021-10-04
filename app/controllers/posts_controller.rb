@@ -8,6 +8,11 @@ class PostsController < ApplicationController
     @posts = Post.order("created_at DESC").page params[:page]
   end
 
+  # GET /posts/user
+  def user
+    @posts = Post.where(user_id: current_user.id).order("created_at DESC").page params[:page]
+  end
+
   # GET /posts/1 or /posts/1.json
   def show
     @comment = Comment.new

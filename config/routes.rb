@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'home/index'
+  get 'posts/user'
   devise_for :users
   resources :posts
   resources :comments
