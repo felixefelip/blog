@@ -66,3 +66,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'kaminari', :git => 'https://github.com/kaminari/kaminari'
 gem 'truncate_html'
+gem 'rubocop'
