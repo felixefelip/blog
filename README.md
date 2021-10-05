@@ -13,5 +13,5 @@ Este blog foi criado com Ruby on Rails e banco de dados relacional MySQL e está
 **Versão do Ruby:**
 3.0.2p107
 
-**Versão do Rails: **
+**Versão do Rails:**
 6.1.4.1
