@@ -1,24 +1,23 @@
-# README
+# Blog com Ruby on Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este blog foi criado com Ruby on Rails e banco de dados relacional MySQL e está disponível no Heroku pela seguinte URL: http://railsblog98.herokuapp.com
 
-Things you may want to cover:
+**Principais Gems utilizadas:** 
 
-* Ruby version
+* Devise para o sistema de autenticação do usuário;
 
-* System dependencies
+* Kaminari para a paginação de posts
 
-* Configuration
+**Para roda o projeto na sua máquina é preciso:**
 
-* Database creation
+* Ter o Ruby on Rails instalado;
 
-* Database initialization
+* Ter o MySQL Server instalado;
 
-* How to run the test suite
+* Rodar o comando: " rails db:migrate " para gerar a base de dados;
 
-* Services (job queues, cache servers, search engines, etc.)
+**Versão do Ruby**
+3.0.2p107
 
-* Deployment instructions
-
-* ...
+**Versão do Rails**
+6.1.4.1
