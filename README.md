@@ -5,7 +5,7 @@ Este blog foi criado com Ruby on Rails e banco de dados relacional MySQL e está
 * Devise para o sistema de autenticação do usuário;
 * Kaminari para a paginação de posts
 
-**Para roda o projeto na sua máquina é preciso:**
+**Para rodar o projeto na sua máquina é preciso:**
 * Ter o Ruby on Rails instalado;
 * Ter o MySQL Server e a lib MySQL Client Dev instalados;
 * Rodar o seguinte comando no diretório da aplicação para gerar a base de dados: " rails db:migrate " ;
