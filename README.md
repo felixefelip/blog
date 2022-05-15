@@ -8,7 +8,7 @@ Este blog foi criado com Ruby on Rails e banco de dados relacional MySQL e está
 **Para rodar o projeto na sua máquina é preciso:**
 * Ter o Ruby on Rails instalado;
 * Ter o MySQL Server e a lib MySQL Client Dev instalados;
-* Rodar o seguinte comando no diretório da aplicação para gerar a base de dados: " rails db:migrate " ;
+* Rodar o seguinte comando no diretório da aplicação para gerar a base de dados: `rails db:migrate` ;
 * Iniciar o servidor do Ruby on Rails com o comando: " rails s " 
 
 **Versão do Ruby:**
